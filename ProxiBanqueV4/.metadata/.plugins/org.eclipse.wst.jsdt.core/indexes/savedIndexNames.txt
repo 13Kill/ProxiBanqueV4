@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+\\PARMEFORM\Formation\Cursus-Java-Entreprise\Espaces perso\=Groupe3=\EssaiSpringJPAJSF\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1114524418.index
+3445259257.index
+371567337.index
+1210788490.index
+2891197897.index
+4223088910.index

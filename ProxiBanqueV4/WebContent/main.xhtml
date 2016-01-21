@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://xmlns.jcp.org/jsf/html">
+
+<head>
+	<meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type" />
+	<title>Page Main</title>
+</head>
+
+<h:body>
+	<f:view>
+	<center>
+		<h:form>
+			 <h:outputLabel value="Nom" />
+    <p:inputText value="#{studentBean.nom}" 
+       	id="Nom"
+        required="true" 
+        requiredMessage="UserName is required"
+        validatorMessage="UsesrName should be of length from 5 to 15 chars"
+        >
+     <f:validateLength minimum="5" maximum="15" for="userName"></f:validateLength>
+    </p:inputText>
+    <p:message for="userName"/>
+    <br />
+    
+    <h:outputLabel value="Prenom" />
+    <p:inputText value="#{studentBean.prenom}"
+       id="prenom"
+       required="true" 
+       requiredMessage="Password is required"
+       validatorMessage="Password should be of length from 5 to 15 chars"
+       >
+      <f:validateLength minimum="5" maximum="15" for="password"></f:validateLength>
+    </p:inputText>
+    <p:message for="password" />
+    <br />
+    <h:commandButton action="#{studentBean.insert}" value="Inserer" />
+		</h:form>
+	</center>
+	</f:view>
+</h:body>
+</html>
